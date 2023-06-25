@@ -1,10 +1,10 @@
 ﻿using Bgfx;
-using Gaia.NET.Gaia.API.Engine.Scene.Interfaces;
-using Gaia.NET.Gaia.API.Engine.Scene.Structures;
+using Gaia.NET.Engine.Scene.Interfaces;
+using Gaia.NET.Engine.Scene.Structures;
 using Silk.NET.GLFW;
 using System.Runtime.CompilerServices;
 
-namespace Gaia.NET.Gaia.API.Engine.Scene
+namespace Gaia.NET.Engine.Scene
 {
     public class SceneWindow : IWindow, IDisposable
     {

@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Gaia.NET.Gaia.API.Engine.Scene.Structures
+namespace Gaia.NET.Engine.Scene.Structures
 {
     public readonly struct WindowData
     {

@@ -1,6 +1,6 @@
-﻿using Gaia.NET.Gaia.API.Engine.Scene.Structures;
+﻿using Gaia.NET.Engine.Scene.Structures;
 
-namespace Gaia.NET.Gaia.API.Engine.Scene.Interfaces
+namespace Gaia.NET.Engine.Scene.Interfaces
 {
     internal interface IWindow
     {

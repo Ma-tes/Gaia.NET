@@ -1,4 +1,4 @@
-﻿using Gaia.NET.Gaia.API.Engine.Scene;
+﻿using Gaia.NET.Engine.Scene;
 
 SceneWindow window = new SceneWindow();
 if (!window.CreateInitialization())

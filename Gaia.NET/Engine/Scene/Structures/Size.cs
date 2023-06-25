@@ -1,4 +1,4 @@
-﻿namespace Gaia.NET.Gaia.API.Engine.Scene.Structures
+﻿namespace Gaia.NET.Engine.Scene.Structures
 {
     public struct Size<T> : IEquatable<Size<T>> where T : unmanaged, IEquatable<T>
     {
