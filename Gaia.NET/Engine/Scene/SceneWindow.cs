@@ -9,7 +9,7 @@ namespace Gaia.NET.Engine.Scene
     public class SceneWindow : IWindow, IDisposable
     {
         private bool isDisposed = false;
-        private unsafe bool isRunning => !(GlfwApi.WindowShouldClose(WindowHandle));
+        private unsafe bool isRunning => !GlfwApi.WindowShouldClose(WindowHandle);
 
 #nullable disable
         internal Glfw GlfwApi { get; private set; }
@@ -60,9 +60,7 @@ namespace Gaia.NET.Engine.Scene
             return null;
         }
 
-        //TODO: Consider using Glfw3.Terminate(), due
-        //to universal termination of all handlers.
-        public unsafe void Dispose() 
+        public unsafe void Dispose()
         {
             if (WindowPointer is not null)
                 GlfwApi.DestroyWindow(WindowHandle);
