@@ -17,6 +17,7 @@ namespace Gaia.NET.Engine.Scene
 
         public IntPtr? WindowPointer { get; internal protected set; }
         public WindowData WindowData { get; set; } = WindowData.Default;
+        public Action OnExecuteEvent { get; set; }
 
         public SceneWindow() { }
         public SceneWindow(WindowData windowData)
@@ -42,6 +43,9 @@ namespace Gaia.NET.Engine.Scene
                 GlfwApi.WaitEvents();
                 GlfwApi.PollEvents();
                 unsafe { GlfwApi.SwapBuffers(WindowHandle); }
+
+                if (OnExecuteEvent.Target is not null)
+                    OnExecuteEvent();
             }
         }
 
