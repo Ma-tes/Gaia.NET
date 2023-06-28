@@ -7,6 +7,6 @@ namespace Gaia.NET.Engine.Renderer.Interfaces
     {
         public WindowData Window { get; }
 
-        public void DrawPixel(Vector2 position, int scale)
+        public void DrawPixel(Vector2 position, int scale);
     }
 }

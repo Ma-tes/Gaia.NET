@@ -1,4 +1,4 @@
-﻿namespace Gaia.NET.Engine.Renderer
+﻿namespace Gaia.NET.Engine.Renderer.Structures
 {
     internal readonly struct RGBSegment
     {
@@ -6,13 +6,13 @@
         public byte G { get; }
         public byte B { get; }
 
-        public RGBSegment(byte red, byte green, byte blue) 
+        public RGBSegment(byte red, byte green, byte blue)
         {
             R = red;
             G = green;
             B = blue;
         }
-        public RGBSegment(uint red, uint green, uint blue) 
+        public RGBSegment(uint red, uint green, uint blue)
         {
             R = (byte)red;
             G = (byte)green;

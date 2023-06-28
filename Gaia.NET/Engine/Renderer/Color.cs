@@ -1,4 +1,6 @@
-﻿namespace Gaia.NET.Engine.Renderer
+﻿using Gaia.NET.Engine.Renderer.Structures;
+
+namespace Gaia.NET.Engine.Renderer
 {
     internal readonly struct Color
     {

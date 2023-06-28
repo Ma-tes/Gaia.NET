@@ -25,7 +25,7 @@ namespace Gaia.NET.Engine.Scene
             WindowData = windowData;
         }
 
-        public virtual bool CreateInitialization() 
+        public virtual bool CreateInitialization()
         {
             GlfwApi = Glfw.GetApi();
             GlfwApi.Init();
