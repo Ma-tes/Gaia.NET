@@ -1,12 +1,18 @@
-﻿using Gaia.NET.Engine.Scene.Structures;
-using System.Numerics;
+﻿using Gaia.NET.Engine.Renderer.Structures;
+using Gaia.NET.Engine.Scene.Structures;
 
 namespace Gaia.NET.Engine.Renderer.Interfaces
 {
-    internal interface IRenderer
+    internal interface IRenderer : IDisposable
     {
         public WindowData Window { get; }
 
-        public void DrawPixel(Vector2 position, int scale);
+        public bool TryInitializate();
+
+        public void DrawPixel(ColorVertex colorVertex, int scale);
+        public ValueTask DrawPixelAsync(ColorVertex colorVertex, int scale);
+
+        public void UpdateBufferFrame();
+        public ValueTask UpdateBufferFrameAsync();
     }
 }
