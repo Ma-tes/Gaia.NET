@@ -2,7 +2,7 @@
 
 namespace Gaia.NET.Engine.Renderer.Structures
 {
-    internal ref struct ColorVertex
+    public ref struct ColorVertex
     {
         public Color Color { get; set; }
         public Vector2 Position { get; set; }

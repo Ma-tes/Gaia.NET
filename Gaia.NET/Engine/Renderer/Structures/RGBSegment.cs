@@ -1,6 +1,6 @@
 ﻿namespace Gaia.NET.Engine.Renderer.Structures
 {
-    internal readonly struct RGBSegment
+    public readonly struct RGBSegment
     {
         public byte R { get; }
         public byte G { get; }

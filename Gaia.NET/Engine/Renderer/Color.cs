@@ -2,7 +2,7 @@
 
 namespace Gaia.NET.Engine.Renderer
 {
-    internal readonly struct Color
+    public readonly struct Color
     {
         public RGBSegment RGBSegment { get; }
         public uint HexadecimalCode { get; }
