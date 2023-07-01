@@ -3,7 +3,7 @@ using Gaia.NET.Engine.Scene.Structures;
 
 namespace Gaia.NET.Engine.Renderer.Interfaces
 {
-    internal interface IRenderer : IDisposable
+    public interface IRenderer : IDisposable
     {
         public WindowData Window { get; }
 
